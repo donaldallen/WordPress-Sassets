@@ -1,0 +1,5 @@
+// Importing functions so we can use rem-calc()
+@import '../../bower_components/foundation/scss/foundation/functions';
+
+$include-open-sans: false !default;
+$row-width: rem-calc(1400);

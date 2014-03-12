@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/******************************************************************
+Theme Name: Sassets
+Theme URI: http://www.topdraw.com/
+Description: Sass theme.
+Author: Top Draw
+Author URI: http://www.topdraw.com
+Version: 1.0
+Tags: flexible-width
+******************************************************************/
+@import 'foundation_settings';
+@import '../../bower_components/foundation/scss/foundation/components/grid';
+@import '../../bower_components/foundation/scss/foundation/components/inline-lists';
+@import '../../bower_components/foundation/scss/foundation/components/forms';
+@import '../../bower_components/foundation/scss/foundation/components/visibility';
+
+@import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+@import 'variables';
+
+::-moz-selection {
+    background:$link;
+    color:#fff;
+    text-shadow:none;
+}
+
+::selection {
+    background:$link;
+    color:#fff;
+    text-shadow:none;
+}
+
+html {
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+}
+
+body {
+    font: {
+        family:$sans-serif;
+        size: em(16);
+    }
+
+    @media #{$medium-up} {
+        padding:0 0 0 250px;
+    }
+
+    @media #{$small-only} {
+        background-image:none!important;
+        padding:0;
+    }
+
+    padding:100em;
+
+    color:#707372;
+
+    @include transition (all .3s ease-in-out);
+}
